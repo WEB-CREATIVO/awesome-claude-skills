@@ -163,6 +163,7 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 - [Internal Comms](./internal-comms/) - Helps write internal communications including 3P updates, company newsletters, FAQs, status reports, and project updates using company-specific formats.
 - [Lead Research Assistant](./lead-research-assistant/) - Identifies and qualifies high-quality leads by analyzing your product, searching for target companies, and providing actionable outreach strategies.
 - [Marketing Skills](https://github.com/coreyhaines31/marketingskills) - 47 marketing skills for Claude Code and AI agents covering CRO, copywriting, SEO, analytics, paid ads, email marketing, and growth engineering ([marketing-skills.com](https://marketing-skills.com/)). Install via `npx skills add coreyhaines31/marketingskills` or `/plugin marketplace add coreyhaines31/marketingskills` + `/plugin install marketing-skills`. *By [@coreyhaines31](https://github.com/coreyhaines31)*
+- [Instagram Agent Skill](https://github.com/Jakeschincariol/instagram-agent-skill) - 13 skills to run an Instagram account: Reels scripts from 26 scored hook formulas, niche viral research, linted captions, carousels, stories, profile scoring, weekly plan, comments, replies, DMs, repurposing, audits, and a humanizer. Free, MIT, no API key. Install via `/plugin marketplace add Jakeschincariol/instagram-agent-skill` + `/plugin install instagram-agent`. *By [@Jakeschincariol](https://github.com/Jakeschincariol)*
 
 ### Communication & Writing
 
