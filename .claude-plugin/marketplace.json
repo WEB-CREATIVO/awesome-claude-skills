@@ -1,0 +1,14 @@
+{
+  "name": "web-creativo-mods",
+  "owner": {
+    "name": "WEB-CREATIVO"
+  },
+  "plugins": [
+    {
+      "name": "agent-dispatch",
+      "source": "./agent-dispatch",
+      "description": "Panel en vivo de lo que hace cada agente y enrutado automático de modelo según la complejidad de la tarea."
+    }
+  ],
+  "description": "Mods de Claude Code de WEB-CREATIVO"
+}

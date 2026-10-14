@@ -1,0 +1,9 @@
+{
+  "name": "agent-dispatch",
+  "version": "0.1.0",
+  "description": "Panel en vivo de lo que hace cada agente y enrutado automático de modelo según la complejidad de la tarea.",
+  "types": "./types/index.d.ts",
+  "author": {
+    "name": "WEB-CREATIVO"
+  }
+}
