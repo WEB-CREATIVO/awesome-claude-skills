@@ -1,0 +1,86 @@
+# ⚠️ DATOS DE EJEMPLO. Sustitúyelos por los de tu clínica antes de usar el bot.
+# Todo lo que el bot dice sobre la clínica sale de este archivo: si no está aquí,
+# el bot tiene instrucciones de NO inventarlo y derivar a recepción.
+
+name: "Clínica Dental Ejemplo"
+timezone: "Europe/Madrid"
+address: "Calle Ejemplo 12, 28000 Madrid"
+phone: "+34 900 000 000"            # teléfono de recepción
+emergency_phone: "+34 900 000 001"  # urgencias fuera de horario
+website: "https://www.ejemplo.com"
+language: "es"
+
+# Horario de atención de la agenda (formato 24h). Días: mon tue wed thu fri sat sun
+opening_hours:
+  mon: [["09:00", "14:00"], ["16:00", "20:00"]]
+  tue: [["09:00", "14:00"], ["16:00", "20:00"]]
+  wed: [["09:00", "14:00"], ["16:00", "20:00"]]
+  thu: [["09:00", "14:00"], ["16:00", "20:00"]]
+  fri: [["09:00", "14:00"]]
+  sat: []
+  sun: []
+
+closed_dates: ["2026-12-25", "2027-01-01", "2027-01-06"]   # festivos / cierres (YYYY-MM-DD)
+
+booking:
+  slot_step_minutes: 15     # cada cuánto empiezan los huecos
+  min_notice_hours: 4       # antelación mínima para reservar
+  max_days_ahead: 60        # hasta cuántos días vista se puede reservar
+
+# Tratamientos que el bot puede AGENDAR. Duración en minutos.
+treatments:
+  - id: revision
+    name: "Primera visita / revisión"
+    duration_min: 30
+    price: "Primera revisión gratuita"
+  - id: limpieza
+    name: "Limpieza dental"
+    duration_min: 45
+    price: "desde 55 €"
+  - id: empaste
+    name: "Empaste"
+    duration_min: 45
+    price: "desde 60 €, según caso"
+  - id: urgencia
+    name: "Dolor / urgencia"
+    duration_min: 30
+    price: "se valora en consulta"
+  - id: ortodoncia
+    name: "Consulta de ortodoncia"
+    duration_min: 30
+    price: "Primera consulta gratuita"
+  - id: blanqueamiento
+    name: "Blanqueamiento"
+    duration_min: 60
+    price: "desde 220 €"
+
+# Preguntas frecuentes. El bot SOLO afirma lo que esté aquí.
+faqs:
+  - q: "¿Cuánto cuesta una limpieza / un empaste / etc.?"
+    a: "Los precios orientativos están en la lista de tratamientos. El precio final lo confirma el dentista tras la revisión."
+  - q: "¿Aceptan seguros / mutuas?"
+    a: "Trabajamos con algunas aseguradoras. Para confirmar la tuya, llama a recepción o dinos el nombre y lo consultamos."
+  - q: "¿Se puede pagar a plazos?"
+    a: "Sí, financiamos tratamientos de más de 300 €. Los detalles se dan en consulta."
+  - q: "¿Qué pasa si no puedo asistir?"
+    a: "Avísanos con al menos 24 horas de antelación para cancelar o cambiar la cita sin coste."
+  - q: "¿Atienden urgencias?"
+    a: "Sí. En horario de clínica, reserva 'Dolor / urgencia' o llama a recepción. Fuera de horario, llama al teléfono de urgencias."
+  - q: "¿Cómo llegar / hay parking?"
+    a: "Estamos en la dirección indicada. Hay un parking público a 100 m."
+  - q: "¿Atienden a niños?"
+    a: "Sí, desde los 3 años."
+  - q: "¿La primera visita es gratis?"
+    a: "La primera revisión es gratuita."
+
+# Frases/temas que el bot debe tratar como urgencia médica y derivar siempre.
+emergency_keywords:
+  - "sangrado"
+  - "no para de sangrar"
+  - "hinchazón en la cara"
+  - "no puedo respirar"
+  - "no puedo tragar"
+  - "golpe en la boca"
+  - "diente roto"
+  - "diente caído"
+  - "fiebre"
